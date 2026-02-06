@@ -1,109 +1,130 @@
 # Fract-ol 🌀
 
-Fract-ol is a small C program to visualize **fractal sets** like **Mandelbrot** and **Julia** using **MiniLibX**.  
-It allows interactive exploration with zoom and custom Julia parameters.
-
----
+Fract-ol is a graphical program written in **C** that visualizes famous **fractal sets** such as the **Mandelbrot** and **Julia** sets using **MiniLibX**.  
+The project focuses on complex numbers, mathematical visualization, event handling, and low-level graphics programming in C.
 
 ## 🎨 Screenshots
 
-**Mandelbrot**  
-![Mandelbrot](mandelbrot.png)  
+### Mandelbrot
+![Mandelbrot](mandelbrot.png)
 
-**Julia Set**  
-![Julia](julia.png)  
+### Julia Set
+![Julia](julia.png)
 
-**Julia Set Variant**  
-![Julia 2](julia_2.png)  
+### Julia Set Variant
+![Julia 2](julia_2.png)
 
----
-
-## 🎥 Demo Video
+## 🎥 Demo
 
 [Watch the fractal in action](video.webm)
 
----
-
 ## 🚀 Features
-- Display **Mandelbrot** and **Julia** fractals  
-- Zoom in/out using mouse scroll  
-- Interactive exploration in a 900x900 window  
-- Custom Julia parameters (-2 to 2)  
 
----
+- Display Mandelbrot and Julia fractals
+- Smooth zoom in/out using mouse scroll
+- Interactive exploration in a 900x900 window
+- Custom Julia parameters via command line
+- Clean window and resource management
 
 ## 💻 Requirements
-- Linux (tested on Ubuntu)  
-- `gcc` or `clang`  
-- `X11` development libraries (`libx11-dev`)  
-- **MiniLibX** included in the repo (`mlx_linux`)  
 
----
+- Linux (tested on Ubuntu)
+- gcc or clang
+- make
+- X11 development libraries (`libx11-dev`)
+- MiniLibX (included in the repository)
 
 ## ⚡ Build
 
-Clone the repository and build:
+Clone the repository and compile the project:
 
-git clone <your-repo-url>
-cd fractol
+```bash
+git clone git@github.com:LeenAlmahthi/Fract-ol-.git
+cd Fract-ol-
 make
+````
 
----
+This will generate the executable:
+
+```bash
+./fractol
+```
+
+Rebuild everything from scratch:
+
+```bash
+make re
+```
+
+Clean object files:
+
+```bash
+make clean
+```
 
 ## 🎮 Usage
 
-### Mandelbrot
+Run the program by specifying the fractal type.
 
+Mandelbrot:
+
+```bash
 ./fractol mandelbrot
+```
 
-### Julia (with custom parameters)
+Julia (real and imaginary parts must be between -2 and 2):
 
+```bash
 ./fractol julia 0.285 0.01
+```
 
-**Mouse Controls:**
-- Scroll up: Zoom in  
-- Scroll down: Zoom out  
+## 🕹️ Controls
 
-**Keyboard Controls:**
-- ESC: Close window  
+Mouse:
 
----
+* Scroll Up → Zoom in
+* Scroll Down → Zoom out
 
-## 📂 Project Structure
+Keyboard:
 
-fractol/
-├─ fract_ol.h          # Header with structs & function prototypes
-├─ main.c              # Main function & hooks
-├─ fractol.c           # Fractal drawing functions
-├─ close_win.c         # Window close & free resources
-├─ uni_libft.c         # Custom utility functions
-├─ mlx_linux/          # MiniLibX library for Linux
-├─ Makefile            # Build system
-├─ julia.png           # Julia fractal screenshot
-├─ julia_2.png         # Julia variant screenshot
-├─ mandelbrot.png      # Mandelbrot screenshot
-└─ video.webm          # Demo video
+* ESC → Close the window
 
----
+## ❌ Error Handling
+
+* Invalid fractal name
+* Incorrect number of arguments
+* Julia parameters outside the range [-2, 2]
+
+The program exits gracefully with an error message.
+
+## 🧠 Concepts Used
+
+* Complex numbers
+* Escape-time algorithm
+* Fractal mathematics
+* Event hooks (keyboard & mouse)
+* Pixel manipulation
+* MiniLibX
 
 ## 👤 Author
-**Leen Almahth** – 42 School  
 
----
+**Leen Almahthi** – 42 School
 
-## ⚡ Notes
-- The project includes MiniLibX, so no extra installation is required.  
-- All Julia numbers must be in the range **-2 to 2**.  
-- Use `make re` to rebuild everything from scratch.  
+## 📌 Notes
 
----
+* MiniLibX is included, no external installation required
+* Zoom is centered on the mouse position
+* Written according to 42 Norm
+* Use `make re` if build issues occur
 
-✅ **Instructions to make it GitHub-ready:**  
-1. Copy everything above.  
-2. In your `fractol` folder, create a file called `README.md`.  
-3. Paste the content inside.  
-4. Commit and push to GitHub:
+## ⭐ Example
 
-git add README.md
-git commit -m "Add README for fractol project"
-git push
+```bash
+./fractol julia -0.8 0.156
+```
+
+```
+
+This is **clean**, **compact**, **GitHub-ready**, and **42-correct**.  
+If you want it **shorter**, **more technical**, or **more flashy**, say the word.
+```
