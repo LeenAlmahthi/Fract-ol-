@@ -33,6 +33,10 @@ The project focuses on complex numbers, mathematical visualization, event handli
 - make
 - X11 development libraries (`libx11-dev`)
 - MiniLibX (included in the repository)
+```Can install it:
+git clone https://github.com/42Paris/minilibx-linux.git mlx_linux
+make
+````
 
 ## ⚡ Build
 
@@ -121,43 +125,12 @@ Keyboard Controls:
 
 ESC: Close window
 
-📂 Project Structure
-fractol/
-├─ fract_ol.h          # Header with structs & function prototypes
-├─ main.c              # Main function & hooks
-├─ fractol.c           # Fractal drawing functions
-├─ close_win.c         # Window close & free resources
-├─ uni_libft.c         # Custom utility functions
-├─ mlx_linux/          # MiniLibX library for Linux
-├─ Makefile            # Build system
-├─ julia.png           # Julia fractal screenshot
-├─ julia_2.png         # Julia variant screenshot
-├─ mandelbrot.png      # Mandelbrot screenshot
-└─ video.webm          # Demo video
-
 👤 Author
 
 Leen Ghnaim – 42 School
 
 ⚡ Notes
 
-The project includes MiniLibX, so no extra installation is required.
-
 All Julia numbers must be in the range -2 to 2.
 
 Use make re to rebuild everything from scratch.
-
-
----
-
-✅ **Instructions to make it GitHub-ready:**  
-1. Copy everything above.  
-2. In your `fractol` folder, create a file called `README.md`.  
-3. Paste the content inside.  
-4. Commit and push to GitHub:
-
-```bash
-git add README.md
-git commit -m "Add README for fractol project"
-git push
->>>>>>> 1ad854c (done)
