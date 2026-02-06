@@ -18,7 +18,7 @@ The project focuses on complex numbers, mathematical visualization, event handli
 
 [Watch the fractal in action](video.webm)
 
-## 🚀 Features
+## Features
 
 - Display Mandelbrot and Julia fractals
 - Smooth zoom in/out using mouse scroll
@@ -89,23 +89,6 @@ Keyboard:
 
 * ESC → Close the window
 
-## ❌ Error Handling
-
-* Invalid fractal name
-* Incorrect number of arguments
-* Julia parameters outside the range [-2, 2]
-
-The program exits gracefully with an error message.
-
-## 🧠 Concepts Used
-
-* Complex numbers
-* Escape-time algorithm
-* Fractal mathematics
-* Event hooks (keyboard & mouse)
-* Pixel manipulation
-* MiniLibX
-
 ## 👤 Author
 
 **Leen Almahthi** – 42 School
@@ -121,10 +104,4 @@ The program exits gracefully with an error message.
 
 ```bash
 ./fractol julia -0.8 0.156
-```
-
-```
-
-This is **clean**, **compact**, **GitHub-ready**, and **42-correct**.  
-If you want it **shorter**, **more technical**, or **more flashy**, say the word.
 ```
