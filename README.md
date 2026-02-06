@@ -47,8 +47,6 @@ git clone git@github.com:LeenAlmahthi/Fract-ol-.git
 cd Fract-ol-
 make
 ````
-
-<<<<<<< HEAD
 This will generate the executable:
 
 ```bash
@@ -110,12 +108,12 @@ Keyboard:
 ```bash
 ./fractol julia -0.8 0.156
 ```
-=======
-Julia (with custom parameters)
+```Julia (with custom parameters)
 ./fractol julia 0.4 0.6
+```
 
 
-Mouse Controls:
+## Mouse Controls:
 
 Scroll up: Zoom in
 
@@ -125,11 +123,11 @@ Keyboard Controls:
 
 ESC: Close window
 
-👤 Author
+##👤 Author
 
 Leen Ghnaim – 42 School
 
-⚡ Notes
+## ⚡ Notes
 
 All Julia numbers must be in the range -2 to 2.
 
