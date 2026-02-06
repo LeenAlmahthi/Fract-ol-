@@ -44,29 +44,33 @@ It allows interactive exploration with zoom and custom Julia parameters.
 
 Clone the repository and build:
 
-```bash
 git clone <your-repo-url>
 cd fractol
 make
-🎮 Usage
-Mandelbrot
+
+---
+
+## 🎮 Usage
+
+### Mandelbrot
+
 ./fractol mandelbrot
 
-Julia (with custom parameters)
+### Julia (with custom parameters)
+
 ./fractol julia 0.285 0.01
 
+**Mouse Controls:**
+- Scroll up: Zoom in  
+- Scroll down: Zoom out  
 
-Mouse Controls:
+**Keyboard Controls:**
+- ESC: Close window  
 
-Scroll up: Zoom in
+---
 
-Scroll down: Zoom out
+## 📂 Project Structure
 
-Keyboard Controls:
-
-ESC: Close window
-
-📂 Project Structure
 fractol/
 ├─ fract_ol.h          # Header with structs & function prototypes
 ├─ main.c              # Main function & hooks
@@ -80,18 +84,17 @@ fractol/
 ├─ mandelbrot.png      # Mandelbrot screenshot
 └─ video.webm          # Demo video
 
-👤 Author
+---
 
-Leen Ghnaim – 42 School
+## 👤 Author
+**Leen Almahth** – 42 School  
 
-⚡ Notes
+---
 
-The project includes MiniLibX, so no extra installation is required.
-
-All Julia numbers must be in the range -2 to 2.
-
-Use make re to rebuild everything from scratch.
-
+## ⚡ Notes
+- The project includes MiniLibX, so no extra installation is required.  
+- All Julia numbers must be in the range **-2 to 2**.  
+- Use `make re` to rebuild everything from scratch.  
 
 ---
 
@@ -101,7 +104,6 @@ Use make re to rebuild everything from scratch.
 3. Paste the content inside.  
 4. Commit and push to GitHub:
 
-```bash
 git add README.md
 git commit -m "Add README for fractol project"
 git push
