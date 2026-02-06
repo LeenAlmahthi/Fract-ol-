@@ -102,33 +102,3 @@ Keyboard:
 * Zoom is centered on the mouse position
 * Written according to 42 Norm
 * Use `make re` if build issues occur
-
-## ⭐ Example
-
-```bash
-./fractol julia -0.8 0.156
-```
-```Julia (with custom parameters)
-./fractol julia 0.4 0.6
-```
-
-
-## Mouse Controls:
-
-Scroll up: Zoom in
-
-Scroll down: Zoom out
-
-Keyboard Controls:
-
-ESC: Close window
-
-##👤 Author
-
-Leen Ghnaim – 42 School
-
-## ⚡ Notes
-
-All Julia numbers must be in the range -2 to 2.
-
-Use make re to rebuild everything from scratch.
